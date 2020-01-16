@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Logout View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginLogoutViewController" customModule="SignInSigOut" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HJP-UY-2AS">
+                                <rect key="frame" x="42" y="177" width="290" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bKe-VB-UTs"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a4x-lM-Eex">
+                                <rect key="frame" x="42" y="249" width="290" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="m69-GM-Aon"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izm-m7-h2e">
+                                <rect key="frame" x="155" y="329" width="65" height="39"/>
+                                <color key="backgroundColor" red="0.21227313252972158" green="0.6697330650646558" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="ObO-5f-sCw"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGd-7g-xgt">
+                                <rect key="frame" x="143" y="388" width="89" height="39"/>
+                                <color key="backgroundColor" red="1" green="0.29420348369999999" blue="0.17738185889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="LOGOUT">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="TKE-bw-lte"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a4x-lM-Eex" firstAttribute="top" secondItem="HJP-UY-2AS" secondAttribute="bottom" constant="42" id="1OQ-MI-w9U"/>
+                            <constraint firstItem="LGd-7g-xgt" firstAttribute="top" secondItem="Izm-m7-h2e" secondAttribute="bottom" constant="20" id="4al-ZK-Z0X"/>
+                            <constraint firstItem="HJP-UY-2AS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="157" id="DF9-te-anr"/>
+                            <constraint firstItem="LGd-7g-xgt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GXn-7U-43q"/>
+                            <constraint firstItem="Izm-m7-h2e" firstAttribute="top" secondItem="a4x-lM-Eex" secondAttribute="bottom" constant="50" id="PWT-9U-292"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a4x-lM-Eex" secondAttribute="trailing" constant="43" id="UP4-vs-wWM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HJP-UY-2AS" secondAttribute="trailing" constant="43" id="VDk-B1-ZGy"/>
+                            <constraint firstItem="a4x-lM-Eex" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="uuo-0Y-QBh"/>
+                            <constraint firstItem="Izm-m7-h2e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vND-BE-PBH"/>
+                            <constraint firstItem="HJP-UY-2AS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="wB1-Hw-jXq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="Izm-m7-h2e" id="SbV-ed-tYH"/>
+                        <outlet property="logoutButton" destination="LGd-7g-xgt" id="Rbg-nW-lO4"/>
+                        <outlet property="passwordTextField" destination="a4x-lM-Eex" id="k3g-K3-vGw"/>
+                        <outlet property="userNameTextField" destination="HJP-UY-2AS" id="ecl-la-TLZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-457" y="116"/>
+        </scene>
+    </scenes>
+</document>
